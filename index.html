@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="script.js" defer></script>
+    <title>Riot Games</title>
+</head>
+<body>
+    
+    <main>
+        <section class="login">
+
+            <div class="wrapper">
+                <img src="img/logo.png" class="login-logo">
+
+                <h1 class="login-title">Fazer login</h1>
+    
+                <label class="login-label">
+                    <span>Nome de usuário</span>
+                    <input type="text" name="username" class="input">
+                </label>
+    
+                <label class="login-label">
+                    <span>Senha</span>
+                    <input type="password" name="password" class="input">
+                </label>
+    
+                <div class="login-icons">
+                    <button type="button" class="icons-buttons">
+                        <img src="img/facebook-icon.png" alt="facebook">
+                    </button>
+                    <button type="button" class="icons-buttons">
+                        <img src="img/google-icon.png" alt="apple">
+                    </button>
+                    <button type="button" class="icons-buttons">
+                        <img src="img/apple-icon.png" alt="google">
+                    </button>
+                </div>
+    
+                <label class="login-label-checkbox">
+                    <input type="checkbox" class="input-checkbox">
+                    Manter login
+                </label> 
+            </div>
+
+            <div class="wrapper">
+                <button type="buttom" class="login-button" disabled>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+    
+                <a href="#" class="login-link">não consegue iniciar a sessão?</a>
+                <a href="#" class="login-link">criar conta</a>
+            </div>
+
+        </section>
+        
+        <section id="wlpp" class="wallpaper">
+            <div class="icons-wlpps">
+                <img src="img/lol.png" width="30" class="icons-wlpp" onclick="mudaWallpaper()">
+                <img src="img/valorant.png" class="icons-wlpp" onclick="mudaWallpaper2()">
+            </div>
+        </section>
+    </main>
+
+    <script src="https://kit.fontawesome.com/4644a15bdd.js" crossorigin="anonymous"></script>
+</body>
+</html>

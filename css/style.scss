@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+@import 'variaveis';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    min-height: 100vh;
+    padding: clamp(35px, 8%, 60px);
+    background-color: $branco2;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-logo {
+    width: 120px;
+    margin-bottom: 73px;
+}
+
+.login-title {
+    color: $cinza-escuro;
+    font-size: 1.35em;
+    margin-bottom: 30px;
+}
+
+.login-label {
+    display: block;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.input {
+    width: 100%;
+    background-color: $cinza-claro;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 15px 10px 10px;
+    font-weight: 600;
+    color: $cinza-escuro;
+}
+
+.input:hover {
+    background-color: $branco2;
+}
+
+.login-label span {
+    position: absolute;
+    font-size: 0.65em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $cinza-medio;
+    margin: 18px;
+    cursor: text;
+    transition: all 200ms ease;
+}
+
+input:focus {
+    background: $branco2;
+    border: 2px solid $cinza-escuro;
+}
+
+.login-label .span-active {
+    font-size: 0.6em;
+    margin: 5px 10px;
+}
+
+.login-icons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.login-icons img {
+    width: 17px;
+}
+
+.icons-buttons {
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.login-icons .icons-buttons:nth-child(1){
+    background-color: $azul;
+    transition: 200ms;
+}
+
+.login-icons .icons-buttons:nth-child(2){
+    background-color: $branco;
+    transition: 200ms;
+}
+
+.login-icons .icons-buttons:nth-child(3){
+    background-color: $preto;
+    transition: 200ms;
+}
+
+.login-icons .icons-buttons:nth-child(1):hover{
+    background-color: $azulhover;
+    box-shadow: rgba(0, 0, 0, 0.107) 0px 3px 8px;
+}
+
+.login-icons .icons-buttons:nth-child(2):hover{
+    box-shadow: rgba(0, 0, 0, 0.107) 0px 3px 8px;
+}
+
+.login-icons .icons-buttons:nth-child(3):hover{
+    background-color: $pretohover;
+    box-shadow: rgba(0, 0, 0, 0.107) 0px 3px 8px;
+}
+
+.login-label-checkbox {
+    width: 100%;
+    margin: 15px 0 50px;
+    font-size: 0.8em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.input-checkbox {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: $cinza-claro;
+    margin-right: 6px;
+    border-radius: 3px;
+    border: none;
+}
+
+
+.input-checkbox:checked {
+    background-color: $vermelho;
+    border: none;
+}
+
+.input-checkbox:checked::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 7px;
+    border: 3px solid $branco;
+    border-width: 0 2.2px 2.2px 0;
+    transform: rotate(45deg);
+    margin: 1.8px 4.5px;
+}
+
+.login-button {
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $branco;
+    font-size: 1.1em;
+    background-color: $vermelho;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 60px;
+    color: $branco;
+    transition: 200ms;
+}
+
+.login-button:disabled {
+    cursor: auto;
+    background-color: $branco;
+    border: 3px solid var(--lightgrey2);
+    color: $cinza;
+    transition: 200ms;
+}
+
+.login-link {
+    font-size: 0.6em;
+    text-decoration: none;
+    color: $cinza-medio;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+    transition: 200ms;
+}
+
+.login-link:hover {
+    font-size: 0.6em;
+    text-decoration: none;
+    color: $cinza-escuro;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.wallpaper {
+    background-image: url(../img/wallpaper-valorant.jpg.png);
+    @include wallpaper;
+}
+
+.wallpaper2 {
+    background-image: url(../img/wallpaper-lol.webp);
+    @include wallpaper;
+}
+
+.icons-wlpp {
+    width: 40px;
+    cursor: pointer;
+    margin-bottom: 1em;
+    background: $cinza;
+    border-radius: 2px;
+    padding: 5px;
+    filter: opacity(50%);
+    transition: 300ms;
+}
+
+.icons-wlpp:hover {
+    width: 40px;
+    cursor: pointer;
+    margin-bottom: 1em;
+    background: $cinza;
+    border-radius: 2px;
+    padding: 5px;
+    filter: opacity(100%);
+    transition: 300ms;
+}
+
+.icons-wlpps {
+    width: 30px;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    margin-top: 2em;
+    margin-right: 3em;
+}

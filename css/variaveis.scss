@@ -1,0 +1,25 @@
+
+$branco: #fff;
+$branco2: #f9f9f9;
+$cinza-escuro: #343434;
+$cinza-claro: #ececec;
+$cinza-claro2: #e9e9e9;
+$cinza: #c4c4c4;
+$cinza-medio: #a7a7a7;
+$preto: #000;
+$pretohover: rgb(17, 17, 17);
+$azul: #1877f3;
+$azulhover: #176bd7;
+$vermelho: #cf3c4f;
+
+@mixin wallpaper {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    -moz-transition: 500ms;
+    -ms-transition: 500ms;
+    -o-transition: 500ms;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+}
